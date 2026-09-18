@@ -14,7 +14,7 @@ url: ""
 
 # Set this to the GitHub repository URL once created. Used for the
 # "Add an entry" / issue-form links and the footer "Source" link.
-repo_url: "https://github.com/ORG/noaa-mcp-landscape"
+repo_url: "https://github.com/jmote-noaa/noaa-mcp-landscape"
 
 # --- Entries as a collection -------------------------------------------------
 # Each file in _projects/ becomes its own page at /project/<id>/, where <id>
