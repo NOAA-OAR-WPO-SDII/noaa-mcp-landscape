@@ -1,5 +1,5 @@
 name: New entry
-description: Add a project to the NOAA MCP Landscape. A maintainer will turn this into a registry record.
+description: Fill out the form below with complete information about an MCP project (server, client, or host) to add it to the catalogue. A maintainer reviews and publishes it.
 title: "[Entry] <project name>"
 labels: ["new-entry"]
 body:
