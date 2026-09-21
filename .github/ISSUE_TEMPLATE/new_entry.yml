@@ -1,0 +1,116 @@
+name: New entry
+description: Add a project to the NOAA MCP Landscape. A maintainer will turn this into a registry record.
+title: "[Entry] <project name>"
+labels: ["new-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding to the landscape. You don't need every field —
+        a name, organization, one-line summary, and status are enough to start.
+        Field definitions live in `docs/terminology.md` in this repo.
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: OISS Knowledge Mesh
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization(s)
+      description: Owning org(s), e.g. "NOAA / Noblis".
+      placeholder: NOAA / Noblis
+    validations:
+      required: true
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Is this a NOAA effort (incl. NOAA-funded contractors / cooperative institutes) or an independent third party?
+      options: [NOAA, External]
+    validations:
+      required: true
+  - type: input
+    id: poc
+    attributes:
+      label: Point of contact (POC)
+      description: Who to reach about this — name, role, and email if you have it.
+      placeholder: Jane Doe, lead, jane.doe@noaa.gov
+  - type: input
+    id: summary
+    attributes:
+      label: One-line summary
+      description: Shown on the registry card.
+      placeholder: MCP access to OISS documentation and development resources.
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: [concept, prototype, pilot, production, archived]
+    validations:
+      required: true
+  - type: input
+    id: status_detail
+    attributes:
+      label: Status detail
+      description: One line on how far along it is (optional).
+      placeholder: Prototype demonstrated; not yet a supported service.
+  - type: dropdown
+    id: mcp_type
+    attributes:
+      label: MCP type
+      description: A server exposes resources/tools; a client/host consumes servers.
+      options: [server, client, host, both]
+    validations:
+      required: true
+  - type: dropdown
+    id: resource
+    attributes:
+      label: Primary resource
+      options:
+        - data access
+        - knowledge management
+        - tooling
+        - workflow
+        - modeling
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: overview
+    attributes:
+      label: Overview
+      description: A short paragraph — what it is, who it's for, why it exists.
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: MCP capabilities
+      description: What the MCP interface can do. One per line.
+      placeholder: |
+        Dataset discovery and search
+        Metadata retrieval
+        Data subsetting by time/space/variable
+  - type: textarea
+    id: resources_exposed
+    attributes:
+      label: Resources exposed
+      description: Datasets, documents, or tools it exposes (for servers). One per line.
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Architecture & technology
+      description: Framework, transport, hosting, auth model.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence & documentation
+      description: Links a reader can follow — repos, design docs, demos. One per line.
+  - type: input
+    id: last_verified
+    attributes:
+      label: Last verified (YYYY-MM-DD)
+      placeholder: "2026-09-01"
