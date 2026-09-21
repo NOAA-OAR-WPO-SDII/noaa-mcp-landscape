@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contribution guide
+    url: https://ORG.github.io/noaa-mcp-landscape/docs/contribute/
+    about: How entries work and how to submit one as a pull request.
