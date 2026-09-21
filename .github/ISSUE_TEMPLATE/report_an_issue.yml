@@ -1,0 +1,25 @@
+name: Report an issue
+description: Corrections to an existing entry, broken or outdated links, stale information, questions, or problems with the site.
+title: "[Issue] <short summary>"
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for anything that isn't a new entry — a correction to an
+        existing project, a broken link, out-of-date information, a question,
+        or a problem with the site itself. To add a new project, use the
+        **New entry** form instead.
+  - type: input
+    id: reference
+    attributes:
+      label: Which entry or page?
+      description: The entry name or id (e.g. erddap-mcp), a URL, or "the site" for a general problem.
+      placeholder: erddap-mcp
+  - type: textarea
+    id: details
+    attributes:
+      label: What's the issue?
+      description: Describe the correction or problem. Include any new or corrected links if you have them.
+    validations:
+      required: true
