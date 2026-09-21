@@ -17,7 +17,7 @@ visible and reduce duplicated effort.
 Open a **New entry** issue and fill in the fields. A maintainer converts it into
 an entry file and adds it. This needs only a GitHub account.
 
-> **[Open the “New entry” form →]({{ site.repo_url }}/issues/new/choose)**
+> **[Open the “New entry” form →]({{ site.repo_url }}/issues/new?template=new_entry.yml)**
 
 Use the **Update / correct an entry** form the same way to flag anything stale
 or wrong, including the point of contact or the `last_verified` date.
